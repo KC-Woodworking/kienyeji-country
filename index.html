@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kienyeji Country</title>
 
-  <!-- Google Font -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
 
   <style>
@@ -66,6 +66,36 @@
       text-decoration: none;
     }
 
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px 20px;
+      background-color: #d4af37;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -80,7 +110,7 @@
   <header>
     <h1>Kienyeji Country</h1>
     <p>Custom Wood & Metal Pieces — Built Exactly How You Want Them</p>
-    <a class="btn" href="https://wa.me/254799400608">Request on WhatsApp</a>
+    <a class="btn" href="https://wa.me/254799400608" target="_blank">Request on WhatsApp</a>
   </header>
 
   <section>
@@ -104,15 +134,29 @@
 
   <section class="contact">
     <h2>Contact</h2>
-    <a href="https://wa.me/254XXXXXXXXX">WhatsApp</a>
-    <a href="#">Email (coming soon)</a>
-    <a href="#">TikTok</a>
-    <a href="#">Instagram</a>
+
+    <a href="https://wa.me/254799400608" target="_blank">WhatsApp</a>
+    <a href="mailto:kienyejicountry@gmail.com">Email</a>
+    <a href="https://www.tiktok.com/@kcwoodworking_ke" target="_blank">TikTok</a>
+    <a href="https://www.instagram.com/kienyejicountry" target="_blank">Instagram</a>
+
+    <h3>Request a Custom Piece</h3>
+
+    <!-- IMPORTANT: Replace with your Formspree link -->
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="What would you like us to build?" required></textarea><br><br>
+      <button type="submit">Send Request</button>
+    </form>
   </section>
 
   <footer>
     <p>Kienyeji Country — Handmade in Kenya</p>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/254799400608" target="_blank" class="whatsapp-float">Chat</a>
 
 </body>
 </html>
